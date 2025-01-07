@@ -20,7 +20,7 @@ const ManageWithdrawal = () => {
    };
 
     const acceptDeposit = (withdrawId) => {
-        const url = `https://cypbit-trade-back-e-nd.vercel.app/api/confirm-withdrawal/${withdrawId}`;
+        const url = `https://cypbit-trade-back-e-nd-ashen.vercel.app/api/confirm-withdrawal/${withdrawId}`;
         axios.post(url)
             .then((response) => {
                 console.log(response.data.user._id)
@@ -34,7 +34,7 @@ const ManageWithdrawal = () => {
     };
 
     const getallDeposit = () => {
-        const url = "https://cypbit-trade-back-e-nd.vercel.app/api/allwithdrawal";
+        const url = "https://cypbit-trade-back-e-nd-ashen.vercel.app/api/allwithdrawal";
         axios.get(url)
             .then((response) => {
                 console.log(response.data);

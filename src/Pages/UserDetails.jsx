@@ -14,7 +14,7 @@ const UserDetails = () => {
     const Nav = useNavigate()
 
     const handleGetOneUserData = () => {
-        const url = `https://cypbit-trade-back-e-nd.vercel.app/api/userdata/${id}`;
+        const url = `https://cypbit-trade-back-e-nd-ashen.vercel.app/api/userdata/${id}`;
         axios
             .get(url)
             .then((res) => {
@@ -150,7 +150,7 @@ const UserDetails = () => {
             console.log(reqData);
     
             // Proceed with the API call
-            const url = `https://cypbit-trade-back-e-nd.vercel.app/api/userdata/${id}`;
+            const url = `https://cypbit-trade-back-e-nd-ashen.vercel.app/api/userdata/${id}`;
             axios
                 .patch(url, reqData)
                 .then((response) => {
@@ -188,7 +188,7 @@ const UserDetails = () => {
         setClearAcc(false);
         const toastLoadingId = toast.loading("Please wait...");
         const Clr = {accountBalance: 0, bonus: 0, totalDeposit: 0, totalInvestment:0, totalProfit:0, totalWithdrawal: 0, tradingAccounts: 0}
-        const url = `https://cypbit-trade-back-e-nd.vercel.app/api/userdata/${id}`;
+        const url = `https://cypbit-trade-back-e-nd-ashen.vercel.app/api/userdata/${id}`;
             axios
                 .patch(url, Clr)
                 .then((response) => {
@@ -256,7 +256,7 @@ const UserDetails = () => {
         setDeleteUser(false);
         const toastLoadingId = toast.loading("Please wait...");
         setShowActions(false);
-        const url = `https://cypbit-trade-back-e-nd.vercel.app/api/userdata/${id}`;
+        const url = `https://cypbit-trade-back-e-nd-ashen.vercel.app/api/userdata/${id}`;
         axios
             .delete(url)
             .then((res) => {
